@@ -4,12 +4,35 @@
 
 **仓库**：https://github.com/mikonos/3devkit-skill
 
-## 安装（Cursor / 兼容 agentskills 布局）
+## 安装
 
-将目录 `skills/3devkit` 复制到目标机器的：
+### 方式一：skills CLI（推荐，多 Agent 一次装好）
+
+需已装 Node.js。在**项目根目录**或任意目录执行：
+
+```bash
+# 仅当前项目（写入 ./.agents/skills 等，并链到 Cursor / Claude Code 等）
+npx skills add mikonos/3devkit-skill -y
+
+# 用户级全局（所有项目可用）
+npx skills add mikonos/3devkit-skill -y -g
+
+# 只要 Cursor
+npx skills add mikonos/3devkit-skill -y -g -a cursor
+```
+
+只装本仓库里这一条 skill 时可用：`--skill 3devkit`（仓库内仅一个 skill 时通常可省略）。
+
+更多选项：`npx skills --help`。发现更多 skill：[skills.sh](https://skills.sh/)。
+
+### 方式二：手动拷贝（纯文件）
+
+把仓库里的目录 **`skills/3devkit`** 整夹复制到：
 
 - **项目内**：`<repo>/.cursor/skills/3devkit/`
 - **用户级**：`~/.cursor/skills/3devkit/`
+
+（与 `references/` 子目录一并保留。）
 
 ## Agent Skill Hub（已导入）
 
