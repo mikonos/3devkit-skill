@@ -11,11 +11,15 @@
 - **项目内**：`<repo>/.cursor/skills/3devkit/`
 - **用户级**：`~/.cursor/skills/3devkit/`
 
-## 提交到目录站（skills / Agent Skill Hub）
+## Agent Skill Hub（已导入）
 
-1. 本仓库推送到 **公开** GitHub（需你本机登录 GitHub CLI 或网页建库）。
-2. 打开 **[agentskill.sh/submit](https://agentskill.sh/submit)**，选 **GitHub Repository**，粘贴仓库 URL，**Analyze & Import**。
-3. 可选：[skills.sh](https://skills.sh/) 等目录会索引公开仓库中的 `SKILL.md`；亦可使用各 CLI（如 `npx skillsadd` / `npx skills add`，以各工具当前文档为准）。
+已通过 **公开 API** 从本仓库导入（无需网页手点）：
+
+- `POST https://agentskillhub.dev/api/v1/repos/analyze` → `POST https://agentskillhub.dev/api/v1/repos/import`
+- 技能展示名：**`mikonos/3devkit`**，版本 `2026.04.05`
+- 检索：`GET https://agentskillhub.dev/api/v1/search?q=3devkit`
+
+网页提交入口仍可用：[agentskill.sh/submit](https://agentskill.sh/submit)（与 Hub 同源）。
 
 ## 许可
 
