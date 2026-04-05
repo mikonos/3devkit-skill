@@ -2,6 +2,8 @@
 
 编排 skill：在 OpenSpec、gstack、Superpowers 三栈之间按产品开发阶段指路；含新手上路、术语表、安装自检与压测用例。
 
+**仓库**：https://github.com/mikonos/3devkit-skill
+
 ## 安装（Cursor / 兼容 agentskills 布局）
 
 将目录 `skills/3devkit` 复制到目标机器的：
